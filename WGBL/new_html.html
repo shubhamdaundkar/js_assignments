@@ -1,0 +1,130 @@
+<html>
+    <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="new_html_css.css">
+    <script src="add.js"></script>
+    <script src="search.js"></script>
+        <title>Students Record</title>
+    </head>
+    <body>
+    
+    <h1>STUDENT'S RECORDS</h1><br>
+
+   <form id="addForm">
+        <div class="container">
+                  <div class="form-group">
+                     <label for="firstName" class="col-sm-2 control-label">Enter Name</label>
+                        <div class="col-sm-6">
+                             <input type="text" id="name" placeholder="Full Name" class="form-control" autofocus>
+                         </div>
+                </div>
+            </div>
+        <br>
+            <div class="container">
+                    <div class="form-group">
+                       <label for="firstName" class="col-sm-2 control-label">Enter Age</label>
+                          <div class="col-sm-6">
+                               <input type="text" id="age" placeholder="Enter Age" class="form-control" autofocus>
+                           </div>
+                  </div>
+                </div>
+            <br>
+              <div class="container">
+                    <div class="form-group">
+                       <label for="firstName" class="col-sm-2 control-label">Science</label>
+                          <div class="col-sm-6">
+                               <input type="text" id="m1" placeholder="Science" class="form-control" autofocus>
+                           </div>
+                  </div>
+              </div>
+            <br>
+              <div class="container">
+                    <div class="form-group">
+                       <label for="firstName" class="col-sm-2 control-label">Maths</label>
+                          <div class="col-sm-6">
+                               <input type="text" id="m2" placeholder="Mathematics" class="form-control" autofocus>
+                           </div>
+                  </div>
+              </div>
+            <br>
+              <div class="container">
+                    <div class="form-group">
+                       <label for="firstName" class="col-sm-2 control-label">English</label>
+                          <div class="col-sm-6">
+                               <input type="text" id="m3" placeholder="English" class="form-control" autofocus>
+                           </div>
+                  </div>
+              </div>
+              <br>
+              <div class="container">
+                    <div class="form-group">
+                        <div class="col-sm-9">
+                            <input class="btn btn-success pull-right" type="submit" value="Save" onclick="return add(event)"/>
+                           </div>
+                        </div>
+                    </div>
+                <br>
+                </form>
+
+                    <form>
+                    <div class="container">
+                            <div class="form-group">
+                               <label for="firstName" class="col-sm-2 control-label">Enter name</label>
+                                  <div class="col-sm-6">
+                                       <input type="text" id="name1" placeholder="Enter name to search record" class="form-control" autofocus>
+                                   </div>
+                          </div>
+                      </div>
+                      <div class="container">
+                            <div class="form-group">
+                                <div class="col-sm-9">
+                                    <input class="btn btn-success pull-right" type="submit" value="Search" onclick="return searchAge(event)"/>
+                                   </div>
+                                </div>
+                            </div>
+                      </form>
+
+       
+<div class="container">
+    <h3>Details Of Students</h3>
+       <table class="table table-striped" id="index">
+       
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Science</th>
+            <th>Maths</th>
+            <th>English</th>
+            <th>Percntage</th>
+            <th>Result</th>
+        </tr>
+        </table>
+        </center>
+        </div>
+        </div>
+
+
+        <div class="container">
+            <h3>After Searching</h3>
+               <table class="table  table-striped" id="index1">      
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Science</th>
+                    <th>Maths</th>
+                    <th>English</th>
+                    <th>Percntage</th>
+                    <th>Result</th>
+                </tr>
+                </table>
+                </center>
+                </div>
+            </div>
+       </body>
+    </body>
+    </html>
